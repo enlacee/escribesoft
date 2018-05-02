@@ -1,0 +1,10 @@
+{
+	"extends": "wordpress",
+	"rules": {
+		"yoda": [
+			"error",
+			"never"
+		],
+		"linebreak-style": ["error", "windows"]
+	}
+}

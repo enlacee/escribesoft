@@ -1,0 +1,24 @@
+/**
+ * Global styles used accross sections
+ */
+
+::selection {
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}
+
+*{
+	outline: none !important;
+}
+html{
+	font-size: 14px;
+}
+body{
+	height: 101vh;
+	overflow-x: hidden;
+}
+i{
+	display: inline-block;
+}
+
+// Components global temp
