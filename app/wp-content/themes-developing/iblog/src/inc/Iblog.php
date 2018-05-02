@@ -20,6 +20,9 @@ class Iblog
         add_action('widgets_init', [$this, 'themeLoadSidebars']);
         add_action('widgets_init', [$this, 'themeLoadWidgets']);
         add_filter('upload_mimes', [$this, 'setMimeTypes']);
+
+        add_action('admin_menu', [$this, 'removeMetaBoxes']);
+        add_action('admin_init', [$this, 'addFacebookId']);
     }
 
     /**
@@ -50,6 +53,40 @@ class Iblog
             )
         );
     }
+
+	/**
+	 * Remove metabox fields for all users
+	 */
+	public function removeMetaBoxes() {
+		// post
+		remove_meta_box( 'postcustom', 'post', 'normal' );
+		remove_meta_box( 'postexcerpt', 'post', 'normal' );
+		remove_meta_box( 'commentstatusdiv', 'post', 'normal' );
+		// page
+		remove_meta_box( 'postcustom', 'page', 'normal' );
+		remove_meta_box( 'commentstatusdiv', 'page', 'normal' );
+		remove_meta_box( 'commentsdiv', 'page', 'normal' );
+		remove_meta_box( 'revisionsdiv', 'page', 'normal' );
+		remove_meta_box( 'authordiv' , 'page' , 'normal' );
+	}
+
+	/**
+	 * Add input facebook_id to option [general]
+	 * @return void
+	 */
+	public function addFacebookId() {
+		register_setting( 'general', 'facebook_id', 'esc_attr' );
+		add_settings_field( 'facebook_id', '<label for="facebook_id">Facebook Id</label>' , array(&$this, 'field_facebook_id_html') , 'general' );
+	}
+	/**
+	 * html
+	 * @return void
+	 */
+	public function field_facebook_id_html() {
+		$value = get_option( 'facebook_id', '' );
+		echo '<input type="number" id="facebook_id" name="facebook_id" value="' . $value . '" />';
+	}
+
 
     /**
      * Hide admin bar in front

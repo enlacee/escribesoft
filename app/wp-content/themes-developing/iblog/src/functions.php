@@ -33,8 +33,24 @@ function theme_setup()
     // Language loading
     load_theme_textdomain('iblog-theme', trailingslashit(get_template_directory()) . 'languages');
 
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+
     // HTML5 support; mainly here to get rid of some nasty default styling that WordPress used to inject
     add_theme_support('html5', array('search-form', 'gallery'));
+
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 1200, 9999 );
 
     // $content_width limits the size of the largest image size available via the media uploader
     // It should be set once and left alone apart from that; don't do anything fancy with it; it is part of WordPress core

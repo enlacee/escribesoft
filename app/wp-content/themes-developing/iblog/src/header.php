@@ -5,8 +5,6 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title><?php the_title(); ?></title>
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180"
@@ -30,3 +28,4 @@
 </head>
 
 <body <?php body_class(); ?> >
+<?php include '_header-menu.php'; ?>
