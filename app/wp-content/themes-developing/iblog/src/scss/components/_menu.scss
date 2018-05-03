@@ -4,6 +4,11 @@
 }
 div.content-bbt-menu{
 	z-index: 2;
+
+	.navbar-header a.navbar-brand {
+		font-size:1.8em;
+		color:black;
+	}
 }
 .bbt-menu{
 	background-color:white;
@@ -101,6 +106,13 @@ nav input[type=checkbox]{
 /* Media Queries
 *******************************************/
 @include maxw(xs){
+
+	div.content-bbt-menu{
+		.navbar-header a.navbar-brand {
+			font-size:1.5em;
+		}
+	}
+
 	nav {
 		text-align: left;
 		margin: 0;
@@ -117,17 +129,21 @@ nav input[type=checkbox]{
 		background-color: white;
 		padding: 0 1.3em;
 		color: black;
-		font-size: 1.3em;
-		line-height: 3em;
+		font-size: 1em;
+		line-height: 2.8em;
 		text-decoration: none;
 		border: none;
-	}
-	.toggle:hover {
-		background-color: #ededed;
 	}
 	/* Event to show and hide*/
 	[id^=drop]:checked + ul {
 		display: block;width: 100%;
+	}
+	nav a {
+		font-size: 1em;
+		// line-height: 2.5em;
+	}
+	nav > label > span{
+		font-size: 1.5em;
 	}
 	nav ul li {
 		display: block;

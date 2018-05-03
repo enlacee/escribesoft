@@ -16,7 +16,6 @@ class Iblog
 
     public function init()
     {
-        add_action('init', [$this, 'themeRegisterMenus']);
         add_action('widgets_init', [$this, 'themeLoadSidebars']);
         add_action('widgets_init', [$this, 'themeLoadWidgets']);
         add_filter('upload_mimes', [$this, 'setMimeTypes']);
@@ -39,19 +38,6 @@ class Iblog
     public function actions()
     {
 //        $this->navHeadAction = new NavHeadAction();
-    }
-
-    /**
-     * Register Menus
-     */
-    public function themeRegisterMenus()
-    {
-        register_nav_menus(
-            array(
-                'menu-primary' => __('Menú Principal', 'iblog-theme'),
-                'menu-footer'  => __('Menú Footer', 'iblog-theme')
-            )
-        );
     }
 
 	/**

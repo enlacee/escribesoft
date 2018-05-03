@@ -1,4 +1,12 @@
 <div class="container content-bbt-menu">
+
+	<div class="navbar-header">
+		<a class="navbar-brand" href="<?php echo get_site_url(); ?>" title="<?php echo get_bloginfo('name') ?>">
+			<!-- <img src="" title="" alt="" class="float-left"> -->
+			<?php echo get_bloginfo('name') ?>
+		</a>
+	</div>
+
 	<div class='bbt-menu'>
 		<nav>
 			<label for='drop' class='toggle'><span>&#9776;</span></label>
