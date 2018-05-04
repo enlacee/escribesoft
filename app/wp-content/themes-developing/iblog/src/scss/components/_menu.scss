@@ -30,7 +30,7 @@ nav {
 		display: block;
 		color: black;
 		font-size: 1.2em;
-		line-height: 2.5em;
+		line-height: 2.1em;
 	}
 	a:hover {
 		text-decoration: none;
@@ -53,13 +53,18 @@ nav {
 		background: white; /*** Warna latar horizontal menu***/
 		text-transform: uppercase;
 	}
-	ul li a,
-	ul ul li a,
-	ul ul ul li a {
+	ul li a {
 		padding: 0  1.3em;
 		margin: 0
 	}
+	ul ul li a,
+	ul ul ul li a {
+		// padding: 0  1em;
+	}
 	ul li:hover > a {
+		color: #d75f16;
+	}
+	.current-menu-item > a {
 		color: #d75f16;
 	}
 	label{
@@ -84,6 +89,7 @@ nav ul ul li {
 	display: list-item;
 	position: relative;
 	text-align: left;
+	width:10em;
 }
 nav ul ul ul {
 	position: absolute;
