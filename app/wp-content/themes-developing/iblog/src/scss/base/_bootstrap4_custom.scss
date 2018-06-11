@@ -1,15 +1,14 @@
 // booststrap custom
+a{
+	color: $link-color;
+}
 .btn{
 	cursor: pointer;
 }
-
-// btn sm
-
 // forms
 select.form-control:not([size]):not([multiple]){
 	height: auto;
 }
-
 // breadcrumb
 // ------------------------------------------------
 .breadcrumb{
@@ -17,12 +16,10 @@ select.form-control:not([size]):not([multiple]){
 		color: $brand-primary;
 	}
 }
-
 // modal
 .close{
 	font-weight: 300;
 }
-
 // Modal center
 // ------------------------------------------------
 .modal{

@@ -20,6 +20,7 @@ Text Domain: #{$theme-text-domain}
 
 // load plugins
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "variables-bootstrap";
 
 // slick
 

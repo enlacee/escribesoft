@@ -6,20 +6,14 @@ app/wp-config.php
 app/wp-content/advanced-cache.php
 app/wp-content/backup-db/
 app/wp-content/backups/
-app/wp-content/blogs.dir/
 app/wp-content/cache/
 app/wp-content/upgrade/
 app/wp-content/uploads/
 app/wp-content/uploads.backup/
 app/wp-content/wp-cache-config.php
 app/wp-content/plugins/hello.php
-app/wp-content/plugins/altimea-herramienta-de-fragancias/
-app/wp-content/plugins/altimea-herramienta-de-fragancias/*
-app/wp-content/themes/lbel-dev
 app/wp-content/w3tc-config/
-
-app/assets/themes-developing/lbel/bower_components/*
-node_modules
+app/wp-content/themes/iblog-dev
 
 app/readme.html
 app/license.txt
@@ -29,8 +23,6 @@ app/wp-config-sample.php
 .DS_Store
 /nbproject/*
 /.vscode/
-/app/wp-content/hybris-api-json/
-/app/wp-content/magento-api-json/
 
 .idea/
 /app/wp-content/wflogs/

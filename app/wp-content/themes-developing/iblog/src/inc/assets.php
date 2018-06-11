@@ -41,8 +41,7 @@ function theme_enqueue_scripts()
     $script_name = '-core';
     $file_name_out_ext = "{$ns}{$script_name}";
     $file_name = "{$file_name_out_ext}.js";
-    $script_hash_md5 = substr(md5_file(get_stylesheet_directory() . "/js/{$file_name}"), 0, 10);
-    $script_file_name = WP_ENV == 'dev' ? "{$file_name}" : "{$file_name_out_ext}_{$script_hash_md5}.js";
+    $script_file_name = "{$file_name}";
 
     // add if file exist
     if ( file_exists( get_stylesheet_directory() . "/js/{$script_file_name}" ) === true ) {
@@ -57,8 +56,7 @@ function theme_enqueue_scripts()
     }
 
     // Register and enqueue our main stylesheet with versioning based on last modified time
-    $style_hash_md5 = substr(md5_file(get_stylesheet_directory() . '/style.css'), 0, 10);
-    $style_file_name = WP_ENV == 'dev' ? "style.css" : "style_{$style_hash_md5}.css";
+    $style_file_name = "style.css";
 
     // add if file exist
     if ( file_exists( get_stylesheet_directory() . "/$style_file_name" ) === true ) {

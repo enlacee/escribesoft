@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
-	<div class="">
-		my post
-	</div>
+<div class="">
+	front-page.php
 </div>
 <?php get_footer(); ?>

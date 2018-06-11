@@ -1,0 +1,64 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+$black-custom: #222;
+// $red:    #d9534f !default;
+// $orange: #f0ad4e !default;
+// $yellow: #ffd500 !default;
+// $green:  #5cb85c !default;
+$blue:   #005999;
+// $teal:   #5bc0de !default;
+// $pink:   #ff5b77 !default;
+// $purple: #613d7c !default;
+
+// Create grayscale
+// $gray-dark:                 #292b2c !default;
+// $gray:                      #464a4c !default;
+// $gray-light:                #636c72 !default;
+// $gray-lighter:              #eceeef !default;
+// $gray-lightest:             #f7f7f9 !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $black-custom;
+// $brand-success:             $green !default;
+// $brand-info:                $teal !default;
+// $brand-warning:             $orange !default;
+// $brand-danger:              $red !default;
+// $brand-inverse:             $gray-dark !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded:            false;
+// $enable-shadows:            false !default;
+// $enable-gradients:          false !default;
+// $enable-transitions:        true !default;
+// $enable-hover-media-query:  false !default;
+// $enable-grid-classes:       true !default;
+// $enable-print-styles:       true !default;
+
+// --- removed style
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $white;
+// $body-color:    $gray-dark !default;
+// $inverse-bg:    $gray-dark !default;
+// $inverse-color: $gray-lighter !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $brand-primary;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline !default;

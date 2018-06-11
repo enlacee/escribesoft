@@ -18,3 +18,4 @@
 
 <body <?php body_class(); ?> >
 <?php include '_header-menu.php'; ?>
+<div class="container site-inner">

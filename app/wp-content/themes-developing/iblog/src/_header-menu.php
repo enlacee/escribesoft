@@ -1,10 +1,18 @@
+<?php
+	// var_dump(is_home());
+?>
 <div class="container content-bbt-menu">
 
-	<div class="navbar-header">
-		<a class="navbar-brand" href="<?php echo get_site_url(); ?>" title="<?php echo get_bloginfo('name') ?>">
-			<!-- <img src="" title="" alt="" class="float-left"> -->
-			<?php echo get_bloginfo('name') ?>
-		</a>
+	<div class="site-branding">
+		<?php if ( is_front_page() || is_home() ) : ?>
+			<h1 class="site-title">
+				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<!-- <img src="" title="" alt="" class="float-left"> -->
+				<?php bloginfo( 'name' ); ?>
+			</a></h1>
+		<?php else : ?>
+			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+		<?php endif; ?>
 	</div>
 
 	<?php if ( has_nav_menu( 'primary' )) : ?>

@@ -1,0 +1,34 @@
+// title (reset boostrap)
+.site-title{
+	font-size: 1.5em;
+	.navbar-brand {
+		font-size: inherit
+	}
+}
+/* sidebar */
+aside.sidebar{
+	section{
+		.widget-title{
+			background-color: $gray-lighter;
+			color: $gray-dark;
+			padding: 0.3em;
+			text-transform: uppercase;
+			font-size:1em;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+.post-thumbnail{
+	img{
+		padding-bottom: 1.5em;
+	}
+}
+article{
+	&.post{
+		padding-bottom: 2em;
+	}
+}

@@ -1,0 +1,63 @@
+// home css
+.container{
+	padding: 0;
+	&::after{
+		display: block;
+		content: "";
+		clear: both;
+	}
+	&.site-inner{
+		padding-top: 2em;
+	}
+}
+.content-sidebar-wrap{
+
+}
+#primary {
+	width: 750px;
+	float:left;
+}
+// widget area
+#secondary{
+	float: right;
+	width: 360px;
+}
+// footer
+.footer-widgets {
+	background-color: #222;
+	color: #fff;
+	clear: both;
+	font-size: 20px;
+	padding: 60px 0 20px;
+}
+.site-footer{
+	background-color: #222;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	a{
+		color: #aaa
+	}
+}
+/**
+ * Container index.php
+ **/
+.blog .inner-content{
+	padding-top: 1.3em;
+}
+.blog article{
+	margin-bottom: 1em;
+}
+.blog .post.entry{
+	border-bottom: 2px solid #eee;
+	margin-bottom:3em;
+}
+.entry-content a {
+	color: #d75f16;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', sans-serif;
+}
+h2{
+	font-size: 1.2em;
+}

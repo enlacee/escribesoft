@@ -4,7 +4,6 @@
 }
 div.content-bbt-menu{
 	z-index: 2;
-
 	.navbar-header a.navbar-brand {
 		font-size:1.8em;
 		color:black;
@@ -25,47 +24,44 @@ nav {
 		display: table;
 		clear: both;
 	}
-	a,
-	a:visited {
+	a{
 		display: block;
 		color: black;
-		font-size: 1.2em;
-		line-height: 2.1em;
-	}
-	a:hover {
-		text-decoration: none;
+		&:visited {
+			display: block;
+			color: black;
+		}
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	a span {
 		color: black;
 	}
 	ul {
-		// float:left;
 		text-align: center;
 		padding: 0;
 		margin: 0;
 		list-style: none;
 		position: relative;
+		font-size: 0.95em;
+		line-height: 1;
+		a{
+			padding: 0.8em 2.2em;
+			margin: 0;
+		}
+		li:hover > a {
+			color: #d75f16;
+		}
 	}
 	ul li {
 		margin: 0px;
 		display: inline-block;
-		// float: left;
-		background: white; /*** Warna latar horizontal menu***/
+		background: white;
 		text-transform: uppercase;
-	}
-	ul li a {
-		padding: 0  1.3em;
-		margin: 0
-	}
-	ul ul li a,
-	ul ul ul li a {
-		// padding: 0  1em;
-	}
-	ul li:hover > a {
-		color: #d75f16;
-	}
-	.current-menu-item > a {
-		color: #d75f16;
+		&.current-menu-item > a {
+			color: #d75f16;
+		}
 	}
 	label{
 		margin: 0;
