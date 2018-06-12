@@ -7,17 +7,19 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('entry'); ?>>
+
+	<?php iblog_post_thumbnail(); ?>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php iblog_post_thumbnail(); ?>
+	<?php iblog_excerpt(); ?>
 
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( '[Leer más]<span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
+				__( '<button class="btn btn-primary">SIGUE LEYENDO...</button><span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
 				get_the_title()
 			) );
 

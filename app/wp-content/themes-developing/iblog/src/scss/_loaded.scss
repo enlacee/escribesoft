@@ -5,6 +5,7 @@
 
 // Configuration variables and settings
 @import "variables";
+@import "variables-bootstrap";
 // add mixins
 @import "mixin/_general";
 
@@ -20,7 +21,6 @@ Text Domain: #{$theme-text-domain}
 
 // load plugins
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "variables-bootstrap";
 
 // slick
 

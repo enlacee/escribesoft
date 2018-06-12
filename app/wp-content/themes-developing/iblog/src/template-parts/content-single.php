@@ -12,6 +12,8 @@
 
 	<?php iblog_post_thumbnail(); ?>
 
+	<?php // iblog_excerpt(); ?>
+
 	<div class="entry-content">
 		<?php
 			the_content();
