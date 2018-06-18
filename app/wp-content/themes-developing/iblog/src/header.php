@@ -4,6 +4,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=edge"/>
 	<meta charset="<?php bloginfo('charset'); ?>"/>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<?php if ( is_single() ) { ?>
+	<meta name="description" content="<?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?>" />
+	<?php } ?>
 	<?php wp_head(); ?>
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

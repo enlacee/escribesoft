@@ -13,34 +13,27 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php iblog_excerpt(); ?>
-
 	<div class="entry-content">
-		<?php
+		<?php if ( has_excerpt() ): ?>
+			<?php iblog_excerpt(); ?>
+		<?php else: ?>
+			<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				__( '<button class="btn btn-primary">SIGUE LEYENDO...</button><span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
 				get_the_title()
 			) );
-
-/*			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'iblog-theme' ) . '</span>',
-				'after'       => '</div>',
-				'link_before' => '<span>',
-				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'iblog-theme' ) . ' </span>%',
-				'separator'   => '<span class="screen-reader-text">, </span>',
-			) );*/
-		?>
+			?>
+		<?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php iblog_entry_meta(); ?>
+		<?php // iblog_entry_meta(); ?>
 		<?php
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
+					__( 'Editar<span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
 					get_the_title()
 				),
 				'<span class="edit-link">',

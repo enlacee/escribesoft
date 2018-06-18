@@ -12,17 +12,20 @@
 	</header><!-- .entry-header -->
 
 	<?php iblog_post_thumbnail(); ?>
+
 	<div class="entry-content">
 		<?php
 		the_content();
 
 		wp_link_pages( array(
-			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'iblog-theme' ) . '</span>',
+			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Paginas:', 'iblog-theme' ) . '</span>',
 			'after'       => '</div>',
-			'link_before' => '<span>',
-			'link_after'  => '</span>',
-			'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'iblog-theme' ) . ' </span>%',
-			'separator'   => '<span class="screen-reader-text">, </span>',
+			// 'link_before' => '<span>',
+			// 'link_after'  => '</span>',
+			// 'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'iblog-theme' ) . ' </span>%',
+			// 'separator'   => '<span class="screen-reader-text">, </span>',
+			// 'nextpagelink'=> __( 'Next page', 'iblog-theme'),
+			// 'previouspagelink' => __( 'Previous page', 'iblog-theme' ),
 		) );
 		?>
 	</div><!-- .entry-content -->
@@ -31,7 +34,7 @@
 		edit_post_link(
 			sprintf(
 				/* translators: %s: Name of current post */
-				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
+				__( 'Editar<span class="screen-reader-text"> "%s"</span>', 'iblog-theme' ),
 				get_the_title()
 			),
 			'<footer class="entry-footer"><span class="edit-link">',
