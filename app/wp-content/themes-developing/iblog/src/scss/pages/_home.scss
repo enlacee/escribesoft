@@ -16,11 +16,17 @@
 #primary {
 	width: 810px;
 	float:left;
+	@include maxw(md){
+		width: 100%;
+	}
 }
 // widget area
 #secondary{
 	float: right;
 	width: 300px;
+	@include maxw(sm){
+		width: 100%;
+	}
 }
 // footer
 .footer-widgets {
@@ -44,6 +50,9 @@
  **/
 .blog .inner-content{
 	padding-top: 1.3em;
+	@include maxw(sm){
+		padding: 0 0.8em;
+	}
 }
 .blog article{
 	margin-bottom: 1em;
