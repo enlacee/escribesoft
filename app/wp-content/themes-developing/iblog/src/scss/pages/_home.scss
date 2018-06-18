@@ -8,6 +8,10 @@
 	}
 	&.site-inner{
 		padding-top: 2em;
+		@include maxw(sm){
+			padding-left: 0.8em;
+			padding-right: 0.8em;
+		}
 	}
 }
 .content-sidebar-wrap{
@@ -50,9 +54,6 @@
  **/
 .blog .inner-content{
 	padding-top: 1.3em;
-	@include maxw(sm){
-		padding: 0 0.8em;
-	}
 }
 .blog article{
 	margin-bottom: 1em;
