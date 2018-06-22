@@ -107,8 +107,7 @@ nav input[type=checkbox]{
 }
 /* Media Queries
 *******************************************/
-@include maxw(xs){
-
+@include media-breakpoint-down(xs){
 	div.content-bbt-menu{
 		.navbar-header a.navbar-brand {
 			font-size:1.5em;

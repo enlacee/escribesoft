@@ -8,7 +8,7 @@
 	}
 	&.site-inner{
 		padding-top: 2em;
-		@include maxw(sm){
+		@include media-breakpoint-down(sm){
 			padding-left: 0.8em;
 			padding-right: 0.8em;
 		}
@@ -20,7 +20,7 @@
 #primary {
 	width: 810px;
 	float:left;
-	@include maxw(md){
+	@include media-breakpoint-down(md){
 		width: 100%;
 	}
 }
@@ -28,7 +28,7 @@
 #secondary{
 	float: right;
 	width: 300px;
-	@include maxw(sm){
+	@include media-breakpoint-down(sm){
 		width: 100%;
 	}
 }

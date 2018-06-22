@@ -25,7 +25,7 @@
 	overflow: hidden;
 	position: fixed;
 	// tablet and mobile
-	@include maxw(sm){
+	@include media-breakpoint-down(sm){
 		position: fixed;
 		left: 0;
 		right: 0;
