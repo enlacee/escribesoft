@@ -2,4 +2,4 @@
 
 Blog minimalist dedicated for developers writers
 
-![thumbnail](thumbnail.pngg)
+![thumbnail](thumbnail.png)
