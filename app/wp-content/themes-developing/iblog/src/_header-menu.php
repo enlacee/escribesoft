@@ -17,18 +17,20 @@
 
 	<?php if ( has_nav_menu( 'primary' )) : ?>
 		<div class='bbt-menu'>
-			<nav>
-				<label for='drop' class='toggle'><span>&#9776;</span></label>
-				<input type='checkbox' id='drop' />
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="position: absolute;top: -47px;right: 0;">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',
 						'container' => false,
-						'menu_class' => 'menu clearfix'
+						'menu_class' => 'menu_ clearfix'
 					 ) );
 				?>
+				</div>
 			</nav>
 		</div>
 	<?php endif; ?>
-
 </div>

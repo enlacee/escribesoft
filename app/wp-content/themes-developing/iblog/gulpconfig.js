@@ -18,7 +18,7 @@ module.exports = {
         notify: true,
         open: true,
         port: 3000,
-        proxy: 'localhost'
+        proxy: 'escribesoft.com'
     },
 
     images: {
@@ -53,7 +53,8 @@ module.exports = {
             ],
             plugins: [
                 dev + 'jquery/dist/jquery.js',
-                dev + 'boostrap/dist/js/bootstrap.js'
+                dev + 'bootstrap/dist/js/bootstrap.js'
+
             ]
         },
         dest: build + 'js/',

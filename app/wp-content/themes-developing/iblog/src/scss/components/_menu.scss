@@ -8,6 +8,15 @@ div.content-bbt-menu{
 		font-size:1.8em;
 		color:black;
 	}
+	@include media-breakpoint-only(xs) {
+		padding: 11px;
+	}
+
+	.navbar{
+		padding-top:0;
+		padding-bottom:0;
+	}
+
 }
 .bbt-menu{
 	background-color:white;
